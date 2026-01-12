@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the domain and hostname
-DOMAIN="priyansh.site"
+DOMAIN="hitesh.site"
 HOSTNAME="$HOSTNAME"        
 
 # Update and upgrade the system
