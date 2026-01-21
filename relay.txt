@@ -1,2 +1,2 @@
-Todd.Gordon@example.online	kumo.example.online
-Donald.Carr@example.online	kumo.example.online
+Todd.Gordon@example.online	smtp.example.online
+Donald.Carr@example.online	smtp.example.online

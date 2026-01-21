@@ -1,5 +1,5 @@
 domains:
-  - name: priyansh.site
+  - name: hitesh.site
     users:
       - { username: Todd.Gordon, password: "HuAGTfIkGzt*Jkr7i4^AX5Z", display_name: Todd Gordon }
       - { username: Donald.Carr, password: "HuAGTfIkGzt*Jkr7i4^AX5Z", display_name: Donald Carr }

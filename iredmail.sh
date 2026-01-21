@@ -18,13 +18,13 @@ hostname -f
 apt-get install -y gzip dialog
 
 # Download iRedMail
-wget https://github.com/iredmail/iRedMail/archive/refs/tags/1.7.2.tar.gz
+wget https://github.com/iredmail/iRedMail/archive/refs/tags/1.7.4.tar.gz
 
 # Move and extract iRedMail
-mv 1.7.2.tar.gz /root/
+mv 1.7.4.tar.gz /root/
 cd /root/
-tar zxf 1.7.2.tar.gz
-cd iRedMail-1.7.2/
+tar zxf 1.7.4.tar.gz
+cd iRedMail-1.7.4/
 
 # Create the configuration file with required settings
 cat <<EOL > config
@@ -33,21 +33,21 @@ export DISABLE_WEB_SERVER='YES'
 export WEB_SERVER=''
 export BACKEND_ORIG='MARIADB'
 export BACKEND='MYSQL'
-export VMAIL_DB_BIND_PASSWD='GMGQiNUhs5RfQnd8BbxvkjZCzpwu0tV0'
-export VMAIL_DB_ADMIN_PASSWD='4wTZdJxASL4dx0K1GL3EBut4j93YK74Q'
-export MLMMJADMIN_API_AUTH_TOKEN='MkIfeUtMNTRLnFeaho9vyfVQ5BqJZwRb'
+export VMAIL_DB_BIND_PASSWD='sjdvboajbsnclnaslcnkasnco'
+export VMAIL_DB_ADMIN_PASSWD='4wTZdJxASL4dx0K1GL3EBuiahbsvhibca'
+export MLMMJADMIN_API_AUTH_TOKEN='MkIfeUtMNTRLnFeaho9vyfcbajbswRb'
 export NETDATA_DB_PASSWD='dbOyuPSFrrHn9hj04dvHeb3JPoyg7tjg'
-export MYSQL_ROOT_PASSWD='VnCWAioUHCVnCWAioUHC'
+export MYSQL_ROOT_PASSWD='isbcabjsdxcansko'
 export FIRST_DOMAIN='$DOMAIN'
-export DOMAIN_ADMIN_PASSWD_PLAIN='VnCWAioUHCVnCWAioUHC'
+export DOMAIN_ADMIN_PASSWD_PLAIN='isbcabjsdxcansko'
 export USE_FAIL2BAN='YES'
-export AMAVISD_DB_PASSWD='YblgX9qwyhqmpQBknDlKBvUDwJHkQ2cW'
-export IREDADMIN_DB_PASSWD='uI2cwOkjfpvHLE608ZdBIZ61HErY54BZ'
-export RCM_DB_PASSWD='8E9qXaT6THlbGdKIToxcsAbOodZlGo07'
-export SOGO_DB_PASSWD='ejJTQE0Idq0vjY7rCTgl62ALamGiGbew'
-export SOGO_SIEVE_MASTER_PASSWD='MAlgcIcwkS5GcwKlEbhqPleY0KO8IPYq'
-export IREDAPD_DB_PASSWD='jWxtvyVAdEdpXrG55v78SCiY1kLe94aL'
-export FAIL2BAN_DB_PASSWD='mW4d8lRB2oUysduhEdrweHbvJ4l99L7E'
+export AMAVISD_DB_PASSWD='YblgX9qwyhqmpQBknDlKBvUDwJHkQsdvdv'
+export IREDADMIN_DB_PASSWD='uI2cwOkjfpvHLE608ZdBIZ61HzscvasdvZ'
+export RCM_DB_PASSWD='8E9qXaT6THlbGdKzdxvadbOodZlGo07'
+export SOGO_DB_PASSWD='ejJTQE0Idqxcabshcbak62ALamGiGbew'
+export SOGO_SIEVE_MASTER_PASSWD='MAlgcviacehyci5GcwKlEbhqPleY0KO8IPYq'
+export IREDAPD_DB_PASSWD='jWxtvyVAdEdpXrGcasihbckCiY1kLe94aL'
+export FAIL2BAN_DB_PASSWD='mW4d8lRB2oUyskbajsdbcabvJ4l99L7E'
 #EOF
 EOL
 
@@ -63,8 +63,8 @@ export AUTO_CLEANUP_REPLACE_MYSQL_CONFIG=y
 yes "" | bash iRedMail.sh
 
 # Mariadb password and postmaster users
-# mariadb password: VnCWAioUHCVnCWAioUHC
-# postmaster@$DOMAIN password: VnCWAioUHCVnCWAioUHC
+# mariadb password: isbcabjsdxcansko
+# postmaster@$DOMAIN password: isbcabjsdxcansko
 
 # Install Certbot
 apt install certbot python-is-python3 -y

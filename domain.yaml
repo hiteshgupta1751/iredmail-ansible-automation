@@ -4,7 +4,7 @@
   become: yes
 
   vars_files:
-    - user500.yaml  # Include the YAML file with domain and user details
+    - user.yaml  # Include the YAML file with domain and user details
 
   tasks:
     - name: Ensure /tmp directory exists on the remote host
