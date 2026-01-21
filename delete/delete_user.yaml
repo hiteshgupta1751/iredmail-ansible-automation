@@ -5,7 +5,7 @@
   tasks:
     - name: Ensure the script is present
       copy:
-        src: /root/hitesh/KumoMTA/flatfeeloans.com/delete_users.sql
+        src: /root/hitesh/delete_users.sql
         dest: /root/delete_users.sql
         mode: '0644'
 
